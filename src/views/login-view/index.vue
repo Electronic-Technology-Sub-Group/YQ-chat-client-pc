@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineOptions({
-  name: 'chat-view',
+  name: 'login-view',
 })
 </script>
 
-<template>会话</template>
+<template>登录页</template>
 
 <style scoped></style>

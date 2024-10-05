@@ -3,7 +3,7 @@ import YqContainer from '@/components/base/Container/container.vue'
 </script>
 
 <template>
-  <YqContainer>你好</YqContainer>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
