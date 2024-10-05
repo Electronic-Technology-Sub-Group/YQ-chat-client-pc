@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import YqContainer from '@/components/base/Container/index.vue'
+import YqContainer from '@/components/base/Container/container.vue'
 </script>
 
 <template>
