@@ -9,7 +9,7 @@ import type { ResultData } from './interface'
 
 const config: AxiosRequestConfig = {
   baseURL: 'http://localhost:5323',
-  timeout: 30000,
+  timeout: 3000,
 }
 
 class HttpRequest {
