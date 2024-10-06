@@ -28,7 +28,7 @@ class HttpRequest {
     // 请求拦截器
     this.service.interceptors.request.use(
       (config) => {
-        if(getToken()) {
+        if (getToken()) {
           config.headers.Authorization = `Bearer ${getToken()}`
         }
         return config
