@@ -25,19 +25,23 @@
 <script lang="ts" setup>
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import type { ILoginParams } from '@/api/interface/user.ts'
-import { login as loginApi } from '@/api/modules/user'
+import type { ILoginParams } from '../../../api/interface/user'
+import { login as loginApi } from '../../../api/modules/user'
+import { useMainStore } from '../../../store'
 
 const router = useRouter()
 
+const mainStore = useMainStore()
+
 const loginForm = reactive<ILoginParams>({
-  email: '' || '123@lingshulian.com',
-  password: '' || '123456',
+  email: '123@lingshulian.com',
+  password: '123456',
 })
 
 const login = () => {
   loginApi(loginForm).then((res) => {
     if (res.code === 200) {
+      mainStore.setToken(res.data.token)
       router.push('/')
     }
   })

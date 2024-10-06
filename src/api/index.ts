@@ -6,6 +6,13 @@ import axios, {
 } from 'axios'
 import { ElMessage } from 'element-plus'
 import type { ResultData } from './interface'
+import { useMainStore } from '../store/index.ts'
+
+const mainStore = useMainStore()
+
+function getToken() {
+  return mainStore.token
+}
 
 const config: AxiosRequestConfig = {
   baseURL: 'http://localhost:5323/api',
@@ -21,6 +28,9 @@ class HttpRequest {
     // 请求拦截器
     this.service.interceptors.request.use(
       (config) => {
+        if(getToken()) {
+          config.headers.Authorization = `Bearer ${getToken()}`
+        }
         return config
       },
       (error: AxiosError) => {
