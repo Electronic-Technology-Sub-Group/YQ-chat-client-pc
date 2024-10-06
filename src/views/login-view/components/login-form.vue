@@ -17,19 +17,31 @@
       <el-checkbox>自动登录</el-checkbox>
     </el-form-item>
     <el-form-item>
-      <el-button>登入</el-button>
+      <el-button @click="login">登入</el-button>
     </el-form-item>
   </el-form>
 </template>
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
+import { useRouter } from 'vue-router'
 import type { ILoginParams } from '@/api/interface/user.ts'
+import { login as loginApi } from '@/api/modules/user'
+
+const router = useRouter()
 
 const loginForm = reactive<ILoginParams>({
-  email: '',
-  password: '',
+  email: '' || '123@lingshulian.com',
+  password: '' || '123456',
 })
+
+const login = () => {
+  loginApi(loginForm).then((res) => {
+    if (res.code === 200) {
+      router.push('/')
+    }
+  })
+}
 </script>
 
 <style></style>

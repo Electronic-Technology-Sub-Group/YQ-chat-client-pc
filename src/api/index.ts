@@ -8,7 +8,7 @@ import { ElMessage } from 'element-plus'
 import type { ResultData } from './interface'
 
 const config: AxiosRequestConfig = {
-  baseURL: 'http://localhost:5323',
+  baseURL: 'http://localhost:5323/api',
   timeout: 3000,
 }
 
