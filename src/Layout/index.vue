@@ -11,6 +11,7 @@ import YqAside from '@/components/base/Container/aside.vue'
 import YqMain from '@/components/base/Container/main.vue'
 import ChatMenu from './components/layout-menu.vue'
 import ConfigMenu from './components/layout-menu.vue'
+import LayoutSearch from './components/layout-search.vue'
 import { ChatMenuList, ConfigMenuList } from '@/config'
 </script>
 
@@ -23,15 +24,13 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
           <div class="w-[70px] h-[70px] rounded-full mx-auto overflow-hidden">
             <img src="/src/assets/avatar.jpg" class="w-full h-full" />
           </div>
-          <!-- TODO: 在线状态开发 -->
-          <!-- ----------------- -->
           <div class="flex flex-1 flex-col justify-between">
             <ChatMenu :menuList="ChatMenuList" defaultActive="chat" />
             <ConfigMenu :menuList="ConfigMenuList" hoverType="plain" />
           </div>
         </YqAside>
         <YqMain class="bg-[#FFFFFF]">
-          会话列表
+          <LayoutSearch />
         </YqMain>
       </YqContainer>
     </YqAside>
