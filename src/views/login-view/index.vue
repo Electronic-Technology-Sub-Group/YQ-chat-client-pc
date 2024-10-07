@@ -1,3 +1,10 @@
+<!--
+ * @Author: ZRMYDYCG
+ * @Date: 2024-10
+ * @LastEditors: ZRMYDYCG
+ * @LastEditTime: 2024-10
+ * @Description: 
+-->
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import enrollForm from './components/enroll-form.vue'

@@ -1,4 +1,5 @@
-export interface ILayoutMenuList {
-  name?: string
+export interface ILayoutMenuItem {
+  key?: string
   path?: string
+  icon?: string
 }
