@@ -1,4 +1,4 @@
 export interface ILayoutMenuList {
-    name?: string
-    path?: string
+  name?: string
+  path?: string
 }
