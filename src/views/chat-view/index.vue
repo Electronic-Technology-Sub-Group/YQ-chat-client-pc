@@ -1,9 +1,5 @@
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<template>
-  会话
-</template>
+<template>会话</template>
 
 <style scoped></style>
