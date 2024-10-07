@@ -35,9 +35,12 @@ export default defineComponent({
         {
           default: () => [
             ...menuList.map((item: ILayoutMenuItem) => {
-              const isActive = currentActive.value === item.key;
-              const hoverClass = props.hoverType === 'background' && !isActive ? `hover:bg-[#E9E9E9]` : '';
-              const activeClass = isActive ? `bg-[#E9E9E9]` : '';
+              const isActive = currentActive.value === item.key
+              const hoverClass =
+                props.hoverType === 'background' && !isActive
+                  ? `hover:bg-[#E9E9E9]`
+                  : ''
+              const activeClass = isActive ? `bg-[#E9E9E9]` : ''
 
               return h(
                 'div',
@@ -48,8 +51,8 @@ export default defineComponent({
                     activeClass,
                   ],
                   onClick: () => {
-                    if (props.hoverType === 'plain') return;
-                    currentActive.value = item.key;
+                    if (props.hoverType === 'plain') return
+                    currentActive.value = item.key
                   },
                 },
                 {

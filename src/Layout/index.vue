@@ -20,9 +20,7 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
       <YqContainer class="h-full">
         <YqAside width="100px" class="flex flex-col h-full">
           <div class="text-center text-gray-500 p-[10px]">内测版</div>
-          <div
-            class="w-[70px] h-[70px] rounded-full mx-auto overflow-hidden"
-          >
+          <div class="w-[70px] h-[70px] rounded-full mx-auto overflow-hidden">
             <img src="/src/assets/avatar.jpg" class="w-full h-full" />
           </div>
           <!-- TODO: 在线状态开发 -->
