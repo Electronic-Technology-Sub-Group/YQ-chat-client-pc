@@ -30,9 +30,7 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
             <ConfigMenu :menuList="ConfigMenuList" hoverType="plain" />
           </div>
         </YqAside>
-        <YqMain class="bg-[#FFFFFF]">
-          会话列表
-        </YqMain>
+        <YqMain class="bg-[#FFFFFF]">会话列表</YqMain>
       </YqContainer>
     </YqAside>
     <YqMain>
