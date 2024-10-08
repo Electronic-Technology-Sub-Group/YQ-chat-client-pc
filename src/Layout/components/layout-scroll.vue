@@ -5,59 +5,19 @@
  * @LastEditTime: 2024-10
  * @Description: 
 -->
+<script setup lang="ts">
+import chatItem from './chat/chat-item.vue'
+</script>
+
 <template>
   <el-scrollbar>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-    <div>1</div>
-  </el-scrollbar> 
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+  </el-scrollbar>
 </template>
-<script setup lang="ts"></script>
-<style scoped>
 
-</style>
+<style scoped></style>
