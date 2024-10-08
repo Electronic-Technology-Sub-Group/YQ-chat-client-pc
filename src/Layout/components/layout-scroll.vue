@@ -10,7 +10,25 @@ import chatItem from './chat/chat-item.vue'
 </script>
 
 <template>
-  <el-scrollbar>
+  <el-scrollbar class="pr-[20px]">
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
+    <chat-item></chat-item>
     <chat-item></chat-item>
     <chat-item></chat-item>
     <chat-item></chat-item>
@@ -20,4 +38,6 @@ import chatItem from './chat/chat-item.vue'
   </el-scrollbar>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

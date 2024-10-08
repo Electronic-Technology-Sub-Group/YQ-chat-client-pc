@@ -28,7 +28,7 @@ const intoSearchDetail = () => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative pr-[20px]">
     <div class="flex gap-x-1 pt-5">
       <el-input
         placeholder="搜索"

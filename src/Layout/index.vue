@@ -48,5 +48,6 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
   flex-direction: column;
   gap: 30px;
   padding-bottom: 0;
+  padding-right: 0;
 }
 </style>
