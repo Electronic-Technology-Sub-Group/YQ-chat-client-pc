@@ -13,17 +13,17 @@ const showTipsBlock = ref(false)
 const tipsBlock = ref<HTMLElement>()
 
 const searchFocus = () => {
-    showTipsBlock.value = true
+  showTipsBlock.value = true
 }
 
 const searchBlur = () => {
-    setTimeout(() => {
-        showTipsBlock.value = false
-    }, 1000)
+  setTimeout(() => {
+    showTipsBlock.value = false
+  }, 1000)
 }
 
 const intoSearchDetail = () => {
-    console.log('进入全局搜索')
+  console.log('进入全局搜索')
 }
 </script>
 
