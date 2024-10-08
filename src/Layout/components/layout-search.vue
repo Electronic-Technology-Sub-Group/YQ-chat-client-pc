@@ -41,7 +41,7 @@ const intoSearchDetail = () => {
       </el-button>
     </div>
     <div
-      class="flex p-5 w-[260px] border-b fixed z-9999 bg-white cursor-pointer"
+      class="flex p-5 w-[260px] border-b fixed z-50 bg-white cursor-pointer"
       @click="intoSearchDetail"
       ref="tipsBlock"
       v-if="showTipsBlock"
