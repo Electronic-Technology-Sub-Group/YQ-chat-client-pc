@@ -38,6 +38,4 @@ import chatItem from './chat/chat-item.vue'
   </el-scrollbar>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
