@@ -12,6 +12,7 @@ import YqMain from '@/components/base/Container/main.vue'
 import ChatMenu from './components/layout-menu.vue'
 import ConfigMenu from './components/layout-menu.vue'
 import LayoutSearch from './components/layout-search.vue'
+import LayoutScroll from './components/layout-scroll.vue'
 import { ChatMenuList, ConfigMenuList } from '@/config'
 </script>
 
@@ -29,8 +30,9 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
             <ConfigMenu :menuList="ConfigMenuList" hoverType="plain" />
           </div>
         </YqAside>
-        <YqMain class="bg-[#FFFFFF]">
+        <YqMain class="bg-[#FFFFFF] flex flex-col">
           <LayoutSearch />
+          <LayoutScroll class="flex-1" />
         </YqMain>
       </YqContainer>
     </YqAside>
@@ -40,4 +42,11 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
   </YqContainer>
 </template>
 
-<style scoped></style>
+<style scoped>
+:deep(.yq-main) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 0;
+}
+</style>
