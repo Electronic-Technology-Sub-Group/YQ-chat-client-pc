@@ -7,15 +7,13 @@
 -->
 <script setup lang="ts">
 import chatItem from './chat/chat-item.vue'
+import userItem from './user/user-item.vue'
 </script>
 
 <template>
   <el-scrollbar class="pr-[20px]">
     <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
+    <user-item></user-item>
   </el-scrollbar>
 </template>
 

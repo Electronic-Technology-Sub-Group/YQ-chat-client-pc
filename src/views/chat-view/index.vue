@@ -15,18 +15,21 @@ import NotChat from '@/components/function/NotFound/not-chat.vue'
 const route = useRoute()
 const chatType = ref(route.query.type)
 
-watch(() => route.query.type, (newType) => {
+watch(
+  () => route.query.type,
+  (newType) => {
     chatType.value = newType
-})
+  },
+)
 </script>
 
 <template>
-    <!-- 初始化状态 -->
-    <not-chat v-if="!chatType"></not-chat>
-    <!-- 单聊 -->
-    <user-room v-if="chatType === 'user'"></user-room>
-    <!-- 群聊 -->
-    <group-room v-if="chatType === 'group'"></group-room>
+  <!-- 初始化状态 -->
+  <not-chat v-if="!chatType"></not-chat>
+  <!-- 单聊 -->
+  <user-room v-if="chatType === 'user'"></user-room>
+  <!-- 群聊 -->
+  <group-room v-if="chatType === 'group'"></group-room>
 </template>
 
 <style scoped></style>

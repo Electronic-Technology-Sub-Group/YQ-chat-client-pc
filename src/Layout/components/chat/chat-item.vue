@@ -26,9 +26,8 @@ interface IChatItemProps {
 
 // defineProps<IChatItemProps>()
 
-
 const toChatRoom = () => {
-    router.push({ name: 'chat', query: { type: 'group', id: 1 } })
+  router.push({ name: 'chat', query: { type: 'group', id: 1 } })
 }
 </script>
 

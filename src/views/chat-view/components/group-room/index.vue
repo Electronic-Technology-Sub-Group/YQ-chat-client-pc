@@ -1,11 +1,5 @@
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
+<template>群聊房间</template>
 
-<template>
-    群聊房间
-</template>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
