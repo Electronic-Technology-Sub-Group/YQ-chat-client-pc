@@ -29,6 +29,7 @@ declare module 'vue' {
     Header: typeof import('./src/components/base/Container/header.vue')['default']
     Input: typeof import('./src/components/form/Input/input.vue')['default']
     Main: typeof import('./src/components/base/Container/main.vue')['default']
+    NotChat: typeof import('./src/components/function/NotFound/not-chat.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     WithIdContainer: typeof import('./src/components/function/with-id-container.vue')['default']

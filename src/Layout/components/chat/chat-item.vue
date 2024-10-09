@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 interface IGroup {
   avatar?: string
   name?: string
@@ -21,10 +25,15 @@ interface IChatItemProps {
 }
 
 // defineProps<IChatItemProps>()
+
+
+const toChatRoom = () => {
+    router.push({ name: 'chat', query: { type: 'group', id: 1 } })
+}
 </script>
 
 <template>
-  <div class="flex w-full h-[70px] items-center">
+  <div class="flex w-full h-[70px] items-center" @click="toChatRoom">
     <div class="w-[50px] h-[50px] rounded-full overflow-hidden">
       <img src="/src/assets/group.png" class="w-full h-full object-cover" />
     </div>

@@ -16,25 +16,6 @@ import chatItem from './chat/chat-item.vue'
     <chat-item></chat-item>
     <chat-item></chat-item>
     <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
-    <chat-item></chat-item>
   </el-scrollbar>
 </template>
 
