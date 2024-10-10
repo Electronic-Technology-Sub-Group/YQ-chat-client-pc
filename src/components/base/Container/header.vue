@@ -31,7 +31,7 @@ const style = computed(
 
 <style scoped>
 .yq-header {
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
   flex-shrink: 0;
   height: 60px;

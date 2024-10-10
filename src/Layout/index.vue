@@ -30,7 +30,7 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
             <ConfigMenu :menuList="ConfigMenuList" hoverType="plain" />
           </div>
         </YqAside>
-        <YqMain class="bg-[#FFFFFF] flex flex-col">
+        <YqMain class="chat-main bg-[#FFFFFF] flex flex-col">
           <LayoutSearch />
           <LayoutScroll class="flex-1" />
         </YqMain>
@@ -43,7 +43,7 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
 </template>
 
 <style scoped>
-:deep(.yq-main) {
+:deep(.chat-main) {
   display: flex;
   flex-direction: column;
   gap: 30px;

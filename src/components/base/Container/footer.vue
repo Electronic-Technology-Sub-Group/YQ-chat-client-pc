@@ -10,6 +10,10 @@ import { computed } from 'vue'
 import type { IPropsFooter } from '../interface/index.ts'
 import type { CSSProperties } from 'vue'
 
+defineOptions({
+  name: 'YqFooter',
+})
+
 const props = withDefaults(defineProps<IPropsFooter>(), {
   height: '100px',
 })
