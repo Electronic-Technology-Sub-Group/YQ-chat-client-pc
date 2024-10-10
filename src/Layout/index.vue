@@ -21,7 +21,11 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
     <YqAside width="400px">
       <YqContainer class="h-full">
         <YqAside width="100px" class="flex flex-col h-full">
-          <div class="text-center text-gray-500 p-[10px]">内测版</div>
+          <div class="flex items-end w-full justify-center py-6 gap-2">
+            <div class="w-[20px] h-[20px] rounded-full bg-[#893cb6]"></div>
+            <div class="w-[20px] h-[20px] rounded-full bg-[#30b191]"></div>
+            <div class="w-[20px] h-[20px] rounded-full bg-[#c03664]"></div>
+          </div>
           <div class="w-[70px] h-[70px] rounded-full mx-auto overflow-hidden">
             <img src="/src/assets/avatar.jpg" class="w-full h-full" />
           </div>
@@ -30,13 +34,15 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
             <ConfigMenu :menuList="ConfigMenuList" hoverType="plain" />
           </div>
         </YqAside>
-        <YqMain class="chat-main bg-[#FFFFFF] flex flex-col">
+        <YqMain
+          class="chat-main bg-[#FFFFFF] flex flex-col border-r-[1px] border-[#E5E5E5]"
+        >
           <LayoutSearch />
           <LayoutScroll class="flex-1" />
         </YqMain>
       </YqContainer>
     </YqAside>
-    <YqMain>
+    <YqMain class="room-main">
       <router-view></router-view>
     </YqMain>
   </YqContainer>
@@ -49,5 +55,9 @@ import { ChatMenuList, ConfigMenuList } from '@/config'
   gap: 30px;
   padding-bottom: 0;
   padding-right: 0;
+}
+
+:deep(.room-main) {
+  padding: 0;
 }
 </style>

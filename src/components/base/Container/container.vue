@@ -50,6 +50,5 @@ const isVertical = computed(() => {
 .vertical {
   flex-direction: column;
   height: 100%;
-  
 }
 </style>
